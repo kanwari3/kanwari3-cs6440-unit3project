@@ -22,14 +22,6 @@
     <main class="main">
       <div class="main-overview">
         <div class="small-card">
-          <div>Height</div>
-          <div class="ob-value" id="height">undefined</div>
-        </div>
-        <div class="small-card">
-          <div>Weight</div>
-          <div class="ob-value" id="weight">undefined</div>
-        </div>
-        <div class="small-card">
           <div>Systolic Blood Pressure</div>
           <div class="ob-value" id="sys">undefined</div>
         </div>
@@ -50,7 +42,7 @@
       <div class="big-card">
         <div class="card">
           <div class="title">
-            Add an Annotation for the Weight Observation
+            Add an Exclusion for Food
           </div>
         <span>  <input class="annotation-box" id="annotation">
           <button class="annotation-button" id="add">Add</button></span>
@@ -62,9 +54,21 @@
 
         <div class="card">
           <div class="title">
-            Medication Requests
+            Exclude From Diet
           </div>
-          <ul id="med_list"></ul>
+          <ul id="exclude_list"></ul>
+        </div>
+        <div class="card">
+          <div class="title">
+            Include In Diet
+          </div>
+          <ul id="include_list"></ul>
+        </div>
+        <div class="card">
+          <div class="title">
+            (GI) Diagnosis
+          </div>
+          <ul id="diag"></ul>
         </div>
       </div>
 
@@ -75,7 +79,7 @@
   <script src="./lib/js/get-data.js"></script>
 
   <!-- uncomment below script and comment above script to switch for easy local testing -->
-  <!-- <script src="./lib/js/get-data-test.js"></script> -->
+<!--   <script src="./lib/js/get-data-test.js"></script>-->
 </body>
 
 </html>
